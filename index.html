@@ -1,198 +1,423 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+
 <head>
-    <title>Valentins1 Seite</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
+
 </head>
-<body class="is-preload">
-    <!-- Wrapper -->
-    <div id="wrapper" class="divided">
-        <!-- One -->
-        <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-            <div class="content">
-                <h1>David Hiltbrunner</h1>
-                <p class="major">I am a business informatics student. First I introduce myself and then I will show here
-					my Portfolio and what Projects im doing.</p>
-                <ul class="actions stacked">
-                    <li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
-                </ul>
-            </div>
-            <div class="image">
-                <img src="Bild.jpeg" style="display: block; margin: 0 auto;">
-            </div>
-        </section>
 
-        <!-- Uhr einfügen -->
-     <!-- JavaScript für die Uhr und das Datum -->
-<script>
-    const clockElement = document.createElement('div');
-    clockElement.id = 'clock';
-    clockElement.style.fontSize = '20px';
-    clockElement.style.fontWeight = 'bold';
-
-    const dateElement = document.createElement('div');
-    dateElement.id = 'date';
-    dateElement.style.fontSize = '16px';
-
-    const clockContainer = document.createElement('div');
-    clockContainer.id = 'clock-container';
-    clockContainer.style.position = 'fixed';  // Ändern Sie die Position auf 'fixed'
-    clockContainer.style.top = '0';  // Setzen Sie top auf 0, um es am oberen Bildschirmrand zu fixieren
-    clockContainer.style.right = '0';
-    clockContainer.style.background = 'rgba(0, 0, 0, 0.7)';
-    clockContainer.style.color = 'white';
-    clockContainer.style.padding = '10px';
-    clockContainer.appendChild(clockElement);
-    clockContainer.appendChild(dateElement);
-    document.body.appendChild(clockContainer);
-
-    function updateClock() {
-        const now = new Date();
-        const options = {
-            hour: 'numeric',
-            minute: 'numeric',
-            second: 'numeric',
-            timeZone: 'Europe/Zurich', // Zeitzone für Bern
-        };
-
-        clockElement.textContent = now.toLocaleTimeString('de-DE', options);
-        dateElement.textContent = now.toLocaleDateString('de-DE');
-
-        requestAnimationFrame(updateClock);
-    }
-
-    // Uhr initialisieren und aktualisieren
-    updateClock();
-</script>
+<body id="top">
 
 
-        <!-- Two -->
-        <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-            <div class="content">
-                <h2>Personal Computer and Technical Home Support</h2>
-                <p>I offer support for technical devices at home in the ready computer and network. If you are interested, please feel free to use the contact form. My catchment area is Bern-Thun</p>
-                <ul class="actions stacked">
-                    <li><a href="#second" class="button big wide smooth-scroll-middle">Learn More</a></li>
-                </ul>
-            </div>
-            <div class="image">
-                <img src="Bild_Futuristic_Mechanic.jpg"/>
-            </div>
-        </section>
 
-        <!-- Three -->
-        <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="second">
-            <div class="content">
-                <h2>Phoenix and Fantasy</h2>
-                <p>Just som Fun with Leonardo.ai</p>
-                <ul class="actions stacked">
-                    <li><a href="#third" class="button big wide smooth-scroll-middle">Learn More</a></li>
-                </ul>
-            </div>
-            <div class="image">
-                <img src="Frostphoenix.jpg" style="display: block; margin: 0 auto;">
-            </div>
-        </section>
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">   
 
-        <!-- Four -->
-        <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="third">
-            <div class="content">
-                <h2>Secretary</h2>
-                <p>PSSST she is Working</p>
-                <ul class="actions stacked">
-                    <li><a href="#fourth" class="button big wide smooth-scroll-middle">Learn More</a></li>
-                </ul>
-            </div>
-            <div class="image">
-                <img src="Secretary.jpg"/>
-            </div>
-        </section>
+   	<div class="intro-overlay"></div>	
 
-        <!-- Five -->
-        <section class="wrapper style1 align-center" id="fourth">
-            <div class="inner">
-                <h2>Massa sed condimentum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
-            </div>
+   	<div class="intro-content">
+   		<div class="row">
 
-            <!-- Gallery -->
-            <div class="gallery style2 medium lightbox onscroll-fade-in">
-                <article>
-                    <a href="images/gallery/fulls/01.jpg" class="image">
-                        <img src="Bild_Futuristic_Mechanic.jpg"/>
-                    </a>
-                    <div class="caption">
-                        <h3>Ipsum Dolor</h3>
-                        <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-                        <ul class="actions fixed">
-                            <li><span class="button small">Details</span></li>
-                        </ul>
-                    </div>
-                </article>
-                <!-- ... (Weitere Galerieartikel) ... -->
-            </div>
-        </section>
+   			<div class="col-twelve">
 
-        <!-- Six -->
-        <section class="wrapper style1 align-center">
-            <div class="inner">
-                <h2>Ipsum sed consequat</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
-                <div class="items style1 medium onscroll-fade-in">
-                    <section>
-                        <span class="icon style2 major fa-gem"></span>
-                        <h3>Lorem</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-                    </section>
-                    <!-- ... (Weitere Abschnitte) ... -->
-                </div>
-            </div>
-        </section>
+	   			<h5>Hello</h5>
+	   			<h1>I'm David John Hiltbrunner.</h1>
 
-        <!-- Seven -->
-        <section class="wrapper style1 align-center">
-            <div class="inner medium">
-                <h2>Get in touch</h2>
-                <form method="post" action="#">
-                    <div class="fields">
-                        <div class="field half">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" value="" />
-                        </div>
-                        <!-- ... (Weitere Eingabefelder) ... -->
-                    </div>
-                    <ul class="actions special">
-                        <li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
-                    </ul>
-                </form>
-            </div>
-        </section>
+	   			<p class="intro-position">
+	   				<span>Business Informatics Student</span>
+	   		
+	   			</p>
 
-        <!-- Footer -->
-        <footer class="wrapper style1 align-center">
-            <div class="inner">
-                <ul class="icons">
-                    <li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-                    <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-                </ul>
-                <p>...</p>
-            </div>
-        </footer>
-    </div>
+	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+	   		</div>  
+   			
+   		</div>   		 		
+   	</div> <!-- /intro-content --> 
+
+      	
+
+   </section> <!-- /intro -->
+
+
+   <!-- about section
+   ================================================== -->
+   <section id="about">  
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>About</h5>
+   			<h1>Let me introduce myself.</h1>
+
+   			<div class="intro-info">
+
+   				<img src="images/profile-pic.jpg" alt="Profile Picture">
+
+   				<p class="lead">"Hello, I'm David Hiltbrunner, a walking encyclopedia of Business Informatics, with a passion for Data Science, and a knack for turning ordinary days into extraordinary stories."</p>
+   			</div>   			
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+
+   			<h3>Profile</h3>
+   			<p>"As a dynamic lateral thinker, I bring a unique blend of creativity and analytical acumen to discover innovative solutions to any challenge."</p>
+
+   			<ul class="info-list">
+   				<li>
+   					<strong>Fullname:</strong>
+   					<span>David John Hiltbrunner</span>
+   				</li>
+   				<li>
+   					<strong>Birth Date:</strong>
+   					<span>March 11, 1994</span>
+   				</li>
+   				<li>
+   					<strong>Job:</strong>
+   					<span>Business Informatics Student</span>
+   				</li>
+   				
+   				<li>
+   					<strong>Email:</strong>
+   					<span>davehilti@gmx.ch</span>
+   				</li>
+
+   			</ul> <!-- /info-list -->
+
+   		</div>
+
+   		<div class="col-six tab-full">
+
+   			<h3>Skills</h3>
+   			<p>"Equipped with a diverse skill set ranging from HTML/CSS and Figma to advanced programming language R, I excel in transforming challenges into opportunities and driving successful outcomes."</p>
+
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent90"><span>90%</span></div>
+				   	<strong>R</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent85"><span>85%</span></div>
+				   	<strong>SQL</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent70"><span>70%</span></div>
+				   	<strong>HTML/CSS</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent95"><span>95%</span></div>
+				   	<strong>Figma</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent75"><span>75%</span></div>
+				   	<strong>Python</strong>
+				   </li>
+      
+				</ul> <!-- /skill-bars -->		
+
+   		</div>
+
+   	</div>
+
+ 
+
+   </section> <!-- /process-->    
+
+
+   <!-- resume Section
+   ================================================== -->
+	<section id="resume" class="grey-section">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Resume</h5>
+   			<h1>More of my credentials.</h1>
+
+   			<p class="lead"></p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Work Experience</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Employment as Junior Client Advisor Payment Transactions</h3>
+	   					<p>August 2020 - August 2021</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>BEKB AG</h4>
+	   					<p>Competent advice for customers on all aspects of payment transactions</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				
+
+	   			
+
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Employment as Junior Client Advisor Payment Transactions</h3>
+	   					<p>August 2017 - March 2020</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Valiant Bank AG</h4>
+	   					<p>Advice for private customers in the retail sector
+							Counter business
+							Experience in the areas of financing and investing.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+   	
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Education</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Bachelor Degree</h3>
+	   					<p>September 2022 - Present</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>BFH University</h4>
+	   					<p>Bachelor in Business Informatics</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Training in Banking</h3>
+	   					<p>August 2017 - February 2019</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Valiant Bank AG</h4>
+	   					<p> Advice for private customers in the retail sector <br/>
+							Counter business<br/>
+							Experience in the areas of financing and investing</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Matura</h3>
+	   					<p>2009 - 2014</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>EMS Schiers, Graubünden</h4>
+	   					<p>Matura with music as main subject.</p>
+	   				</div>
+
+	   			</div> 
+
+   			</div> 			
+
+   		</div> 
+   		
+   	</div> 
+		
+	</section> 
+
+
+
+	         </div> 
+
+   		</div>  
+
+   	</div> 
+		
+	</section> <!-- /portfolio --> 
+
+
+
+	
+	<!-- services Section
+   ================================================== -->
+	<section id="services">
+
+		<div class="overlay"></div>
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Services</h5>
+   			<h1>What Can I Do For You?</h1>
+
+   			<p class="lead"></p>
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row services-content">
+
+		
+	</section> <!-- /services -->	
+
+
+
+   	<div class="row contact-info">
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-pin"></i>
+   			</div>
+
+   			<h5>Where to find me</h5>
+
+   			<p>
+            Brunnmattstrasse 50<br>
+            3007 Bern
+            </p>
+
+   		</div>
+
+   		<div class="col-four tab-full collapse">
+
+   			<div class="icon">
+   				<i class="icon-mail"></i>
+   			</div>
+
+   			<h5>Email Me At</h5>
+
+   			<p>davehilti@gmx.ch			     
+			   </p>
+
+   		</div>
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-phone"></i>
+   			</div>
+
+   			<h5>Call Me At</h5>
+
+   			<p>
+			   	Mobile: (+41)77 456 22 16<br>
+			     
+			   </p>
+
+   		</div>
+   		
+   	</div> <!-- /contact-info -->
+		
+	</section> <!-- /contact -->
+
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<div id="mainContainer">
+		<h1 id="mainTitle">Lust auf eine Ablenkung?</h1>
+	
+		<div id="ticTacToeSection">
+			<h2>Tic Tac Toe</h2>
+
+	<div id="ticTacToeGame">
+		<div id="gameBoardTic">
+			<div class="cell" onclick="makeMove(this, 0)"></div>
+			<div class="cell" onclick="makeMove(this, 1)"></div>
+			<div class="cell" onclick="makeMove(this, 2)"></div>
+			<div class="cell" onclick="makeMove(this, 3)"></div>
+			<div class="cell" onclick="makeMove(this, 4)"></div>
+			<div class="cell" onclick="makeMove(this, 5)"></div>
+			<div class="cell" onclick="makeMove(this, 6)"></div>
+			<div class="cell" onclick="makeMove(this, 7)"></div>
+			<div class="cell" onclick="makeMove(this, 8)"></div>
+		</div>
+		<button onclick="resetGame()">Neues Spiel</button>
+	</div>
+
+
+</div>
+
+<div id="snakeGameSection">
+	<h2>Schlangenspiel</h2>
+	<div id="snakeGame">
+		<canvas id="gameCanvas" width="400" height="400"></canvas>
+		<button id="startButton">Spiel starten</button>
+	</div>
+</div>
+</div>
+
+	
+	
+
+
+	<script src="Games.js"></script>
+
+
 </body>
+
 </html>
