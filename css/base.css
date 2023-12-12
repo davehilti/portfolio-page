@@ -848,3 +848,10 @@ textarea {
 }
 
 /*# sourceMappingURL=base.css.map */
+
+
+#snakeGameSection {
+    background-image: url('images/Snake.webp');
+    background-size: cover;
+    background-position: center;
+}
